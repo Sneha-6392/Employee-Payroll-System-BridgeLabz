@@ -1,8 +1,26 @@
 [
-    {
-        "id": 1,
-        "name": "Sneha Maurya",
-        "department": "CSE",
-        "basicSalary": 100000
-    }
+  {
+    "id": 1,
+    "name": "Sneha Maurya",
+    "department": "CSE",
+    "basicSalary": 100000
+  },
+  {
+    "id": 2,
+    "name": "Vanshika Parashar",
+    "department": "CSE",
+    "basicSalary": 90000
+  },
+  {
+    "id": 3,
+    "name": "Astha Goswami",
+    "department": "ELECTRONICS",
+    "basicSalary": 200000
+  },
+  {
+    "id": 4,
+    "name": "Tushar Bansal",
+    "department": "AI/ML",
+    "basicSalary": 1200000
+  }
 ]

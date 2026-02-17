@@ -29,7 +29,7 @@ app.post('/add', async (req, res) => {
     const employees = await fileHandler.readEmployees();
     const newEmployee = {
         id: employees.length > 0 ? employees[employees.length - 1].id + 1 : 1,
-        nmae: name.trim(),
+        name: name.trim(),
         department: department.trim(),
         basicSalary: salary
     };

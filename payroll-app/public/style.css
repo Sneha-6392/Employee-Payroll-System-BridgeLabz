@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+:root {
+    --primary: #09b128;       
+    --primary-hover: #078d2d;
+    --secondary: #64748b;    
+    --secondary-hover: #475569;
+    --danger: #ef4444;       
+    --danger-hover: #dc2626;
+    --warning: #f59e0b;     
+    --warning-hover: #d97706;
+    --success: #10b981;      
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #ffffff;
+    --border-color: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 30px 20px;
+    line-height: 1.5;
+}
+
+.topbar {
+    background-color: var(--card-bg); 
+    color: var(--primary);
+    padding: 30px 40px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+}
+
+.topbar-brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topbar-brand::before {
+    content: '🧑‍💼'; 
+    font-size: 1.4rem;
+    color: var(--primary); 
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 30px 40px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.form-container {
+    max-width: 500px;
+}
+
+h1 {
+    margin-top: 0;
+    font-weight: 700;
+    color: var(--text-main);
+    font-size: 1.75rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    font-size: 0.875rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary { 
+    background-color: var(--primary); 
+    color: white; 
+    box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2); 
+}
+.btn-primary:hover { 
+    background-color: var(--primary-hover); 
+    transform: translateY(-1px); 
+}
+
+.btn-secondary { background-color: var(--secondary); color: white; }
+.btn-secondary:hover { background-color: var(--secondary-hover); }
+
+.btn-edit { 
+    background-color: var(--card-bg);  
+    border: 2px solid #00a6ff;          
+    color: #00a6ff;                  
+    border-radius: 6px;                 
+    padding: 6px 12px; 
+    font-size: 0.75rem;
+    transition: all 0.2s ease;          
+}
+
+.btn-edit:hover { 
+    background-color: #00a6ff;        
+    color: white;                    
+}
+
+.btn-delete { 
+    background-color: var(--card-bg);
+    border: 2px solid #ff0000; 
+    color: rgb(201, 0, 0);
+    border-radius: 6px;                 
+    padding: 6px 12px; 
+    font-size: 0.75rem;
+    transition: all 0.2s ease; 
+}
+.btn-delete:hover { 
+    background-color: #dc2626;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: #06005a;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+tbody tr { transition: background-color 0.15s; }
+tbody tr:hover { background-color: #f8fafc; }
+tbody tr:last-child td { border-bottom: none; }
+
+td strong { color: var(--success); font-weight: 600; }
+
+.form-group { margin-bottom: 20px; }
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--text-main);
+    font-size: 0.875rem;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 0.875rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.actions { display: flex; gap: 12px; margin-top: 25px; }
+
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.header-actions h1 {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: var(--bg-color);
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.stat-card h3 {
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.stat-card p {
+    margin: 10px 0 0 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+/* Make the Total Net Salary stand out */
+.stat-card p.highlight {
+    color: var(--success);
+}
+
+/* --- Table Enhancements --- */
+.badge {
+    background-color: #e2e8f0;
+    color: #475569;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.text-success {
+    color: var(--success);
+}
